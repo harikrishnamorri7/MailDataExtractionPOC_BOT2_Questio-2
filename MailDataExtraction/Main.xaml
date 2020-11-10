@@ -80,7 +80,11 @@
       <TryCatch.Try>
         <Sequence DisplayName="MailDataExtraction" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <Sequence.Variables>
-            <Variable x:TypeArguments="x:String" Default="hari.krishnamorri@infosys.com" Name="AccountName" />
+            <Variable x:TypeArguments="x:String" Name="AccountName">
+              <Variable.Default>
+                <Literal x:TypeArguments="x:String">harikrishna77.java@outlook.com</Literal>
+              </Variable.Default>
+            </Variable>
             <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="listOfMails" />
             <Variable x:TypeArguments="x:String" Name="strSubject" />
             <Variable x:TypeArguments="x:String" Name="strFrom" />
